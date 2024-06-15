@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        white: '#F2EFEA',
+                        orange: "#FC7753",
+                        dark: "#403D58",
+                        blue: "#66D7D1",
+                        green: "#DBD56E",
+                        whiteFiller: '#FFF',
+                        darkFiller: '#262626'
+                    },
+                    fontFamily: {
+                        'inconsolata': ['Inconsolata', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-inconsolata {
+            font-family: 'Inconsolata', monospace;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+    </style>
+    <title>Passphrase Filler Homepage</title>
+</head>
+<body
+        class="p-8 bg-darkFiller font-inconsolata text-whiteFiller flex flex-col items-center justify-center">
+
+<h1 class="text-6xl font-bold text-center m-4">
+    Welcome to Passphrase Filler Homepage! 🚀
+</h1>
+<section class="text-start text-3xl leading-normal m-6 flex-col flex">
+    <h2>Working for Bavaria Project?</h2>
+    <h2>Tired of constantly typing passphrase for every user?</h2>
+    <h2>Welcome to the future! 🚀</h2>
+    <img src="./imgs/Icon.jpg" alt="icon" class="w-96 h-96 object-contain self-center m-8">
+
+</section>
+
+<section class="py-4 px-8 leading-relaxed">
+    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">What is Passphrase Filler?</h2>
+    <p class="text-xl "> Passphrase Filler is an extension to make your life easier by automatically filling
+        passphrase
+        dropdowns
+        with specific passphrase set based on your <code>matrix_id</code>.</p>
+    <br>
+    <p class="text-xl">It will also automatically detect passphrase reset and replace old passphrase with new one.</p>
+</section>
+<section class="py-4 px-8 leading-relaxed flex flex-col">
+    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">User Guide</h2>
+    <img src="./imgs/img1.png" alt="Extension_photo" class="w-96 h-96 object-contain self-center">
+
+    <p class="text-xl "> As shown on Image above we have 3 inputs to fill:</p>
+    <br>
+    <ul class="px-8 list-disc underline">
+        <li><code>Environment</code> -> not required -> just information for user on which environment we are working.
+        </li>
+        <li><code>User</code> -> ⚠️ required if we want to autofill feature-> check in localStorage your <code>matrix_id
+        </code> value and paste it here. Should look like this -> <code>@int-a.lacroix:matrix.messenger.bycs-int.de</code>
+        </li>
+        <li><code>Passphrase</code> -> required -> 4 words divided by space. Extension is configured in the way that it
+            looks and fills only 4 inputs.
+        </li>
+    </ul>
+    <br>
+</section>
+<section class="py-4 px-8 leading-relaxed">
+    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">Download Now!</h2>
+    <div class="flex gap-6">
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/passphrase-filler/" target="_blank" referrerpolicy="no-referrer"><button
+            type="button"
+            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 transition duration-300 hover:bg-white hover:text-dark" >Firefox
+        Add-on</button></a>
+        <a href="https://github.com/mik9016/PassphraseFillerChrome/archive/refs/tags/v1.3.0.zip" download=""><button
+            type="button"
+            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 transition duration-300 hover:bg-white hover:text-dark">Download for
+        chromium</button></a>
+    </div>
+</section>
+<section class="py-4 px-8 leading-relaxed">
+    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">Curious how it works?</h2>
+    <p class="text-xl">Check out the repo:</p>
+        <ul class="px-8 list-disc underline">
+            <li><a href="https://github.com/mik9016/PassphraseFiller" target="_blank"
+                    referrerpolicy="no-referrer">Passphrase Filler
+                Firefox</a></li>
+            <li><a href="https://github.com/mik9016/PassphraseFillerChrome" target="_blank" referrerpolicy="no-referrer">Passphrase Filler
+                Chromium</a></li>
+        </ul>
+</section>
+
+
+</body>
+<footer class="mt-6 mb-0 pb-0">
+    <p>© Copyright Mikolaj Gruszecki</p>
+</footer>
+<script src="./index.js" defer></script>
+</html>
