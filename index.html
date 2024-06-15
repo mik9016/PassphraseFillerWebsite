@@ -38,36 +38,36 @@
     </style>
     <title>Passphrase Filler Homepage</title>
 </head>
-<body
-        class="p-8 bg-darkFiller font-inconsolata text-whiteFiller flex flex-col items-center justify-center">
+<body class="p-8 bg-darkFiller font-inconsolata text-whiteFiller flex flex-col items-center justify-center">
 
-<h1 class="text-6xl font-bold text-center m-4">
+<h1 class="md:text-6xl font-bold text-center m-4 text-3xl">
     Welcome to Passphrase Filler Homepage! 🚀
 </h1>
-<section class="text-start text-3xl leading-normal m-6 flex-col flex">
+<section class="text-start md:text-3xl text-xl leading-normal m-6 flex-col flex">
     <h2>Working for Bavaria Project?</h2>
     <h2>Tired of constantly typing passphrase for every user?</h2>
     <h2>Welcome to the future! 🚀</h2>
-    <img src="./imgs/Icon.jpg" alt="icon" class="w-96 h-96 object-contain self-center m-8">
+    <img src="./imgs/Icon.jpg" alt="icon" class="w-96 h-96 object-contain self-center md:m-8 m-0">
 
 </section>
 
-<section class="py-4 px-8 leading-relaxed">
-    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">What is Passphrase Filler?</h2>
-    <p class="text-xl "> Passphrase Filler is an extension to make your life easier by automatically filling
+<section class="py-4 md:px-8 leading-relaxed">
+    <h2 class="md:text-4xl text-2xl text-whiteFiller font-bold text-center m-4">What is Passphrase Filler?</h2>
+    <p class="md:text-xl"> Passphrase Filler is an extension to make your life easier by automatically filling
         passphrase
         dropdowns
         with specific passphrase set based on your <code>matrix_id</code>.</p>
     <br>
-    <p class="text-xl">It will also automatically detect passphrase reset and replace old passphrase with new one.</p>
+    <p class="md:text-xl">It will also automatically detect passphrase reset and replace old passphrase with new one
+        .</p>
 </section>
-<section class="py-4 px-8 leading-relaxed flex flex-col">
-    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">User Guide</h2>
+<section class="py-4 md:px-8 leading-relaxed flex flex-col">
+    <h2 class="md:text-4xl text-2xl text-whiteFiller font-bold text-center m-4">User Guide</h2>
     <img src="./imgs/img1.png" alt="Extension_photo" class="w-96 h-96 object-contain self-center">
 
-    <p class="text-xl "> As shown on Image above we have 3 inputs to fill:</p>
+    <p class="md:text-xl"> As shown on Image above we have 3 inputs to fill:</p>
     <br>
-    <ul class="px-8 list-disc underline">
+    <ul class="md:px-8 list-disc underline">
         <li><code>Environment</code> -> not required -> just information for user on which environment we are working.
         </li>
         <li><code>User</code> -> ⚠️ required if we want to autofill feature-> check in localStorage your <code>matrix_id
@@ -79,22 +79,22 @@
     </ul>
     <br>
 </section>
-<section class="py-4 px-8 leading-relaxed">
-    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">Download Now!</h2>
-    <div class="flex gap-6">
+<section class="py-4 md:px-8 leading-relaxed">
+    <h2 class="md:text-4xl text-2xl text-whiteFiller font-bold text-center md:m-4">Download Now!</h2>
+    <div class="flex md:flex-row flex-col item-center gap-6">
         <a href="https://addons.mozilla.org/en-US/firefox/addon/passphrase-filler/" target="_blank" referrerpolicy="no-referrer"><button
             type="button"
-            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 transition duration-300 hover:bg-white hover:text-dark" >Firefox
+            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 md:transition duration-300 hover:bg-white hover:text-dark" >Firefox
         Add-on</button></a>
         <a href="https://github.com/mik9016/PassphraseFillerChrome/archive/refs/tags/v1.3.0.zip" download=""><button
             type="button"
-            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 transition duration-300 hover:bg-white hover:text-dark">Download for
+            class="border-2 border-whiteFiller rounded-md m-4 h-20 w-48 md:transition duration-300 hover:bg-white hover:text-dark">Download for
         chromium</button></a>
     </div>
 </section>
-<section class="py-4 px-8 leading-relaxed">
-    <h2 class="text-4xl text-whiteFiller font-bold text-center m-4">Curious how it works?</h2>
-    <p class="text-xl">Check out the repo:</p>
+<section class="py-4 md:px-8 leading-relaxed">
+    <h2 class="md:text-4xl text-2xl text-whiteFiller font-bold text-center m-4">Curious how it works?</h2>
+    <p class="md:text-xl">Check out the repo:</p>
         <ul class="px-8 list-disc underline">
             <li><a href="https://github.com/mik9016/PassphraseFiller" target="_blank"
                     referrerpolicy="no-referrer">Passphrase Filler
@@ -106,7 +106,7 @@
 
 
 </body>
-<footer class="mt-6 mb-0 pb-0">
+<footer class="mt-6 mb-0 pb-0 text-sm">
     <p>© Copyright Mikolaj Gruszecki</p>
 </footer>
 <script src="./index.js" defer></script>
