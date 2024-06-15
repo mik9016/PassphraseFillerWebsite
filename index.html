@@ -37,7 +37,7 @@
         }
     </style>
     <title>Passphrase Filler Homepage</title>
-    <link rel="icon" type="image/x-icon" href="/imgs/icon32.jpg">
+    <link rel="icon" type="image/jpg" href="/imgs/icon32.jpg">
 </head>
 <body class="p-8 bg-darkFiller font-inconsolata text-whiteFiller flex flex-col items-center justify-center">
 
@@ -82,6 +82,7 @@
 </section>
 <section class="py-4 md:px-8 leading-relaxed">
     <h2 class="md:text-4xl text-2xl text-whiteFiller font-bold text-center md:m-4">Download Now!</h2>
+    <p id="latestVersion" class="md:text-xl text-center"></p>
     <div class="flex md:flex-row flex-col item-center gap-6">
         <a href="https://addons.mozilla.org/en-US/firefox/addon/passphrase-filler/" target="_blank" referrerpolicy="no-referrer"><button
             type="button"
@@ -100,7 +101,8 @@
             <li><a href="https://github.com/mik9016/PassphraseFiller" target="_blank"
                     referrerpolicy="no-referrer">Passphrase Filler
                 Firefox</a></li>
-            <li><a href="https://github.com/mik9016/PassphraseFillerChrome" target="_blank" referrerpolicy="no-referrer">Passphrase Filler
+            <li><a id="chromiumDownloadLink" href="" target="_blank"
+                    referrerpolicy="no-referrer">Passphrase Filler
                 Chromium</a></li>
         </ul>
 </section>
@@ -110,4 +112,5 @@
 <footer class="mt-6 mb-0 pb-0 text-sm">
     <p>© Copyright Mikolaj Gruszecki</p>
 </footer>
+<script src="./index.js" defer></script>
 </html>
