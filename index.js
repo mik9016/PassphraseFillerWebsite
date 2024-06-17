@@ -6,5 +6,7 @@ fetch(githubUrl).then(res => res.json()).then(
         latestVersionTag.innerText = `Latest version: ${data?.tag_name}`
         chromiumDownloadLink.href = data?.zipball_url
     }
-
 )
+const copyright = document.getElementById('copyright')
+const date = new Date()
+copyright.innerText = `© Copyright Mikolaj Gruszecki ${date.getFullYear()}`
